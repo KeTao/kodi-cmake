@@ -31,6 +31,10 @@
 #include "utils/URIUtils.h"
 #include "utils/log.h"
 
+#ifdef TARGET_POSIX
+#include "XTimeUtils.h"
+#endif
+
 using namespace XFILE;
 
 CScriptInvocationManager::CScriptInvocationManager()
