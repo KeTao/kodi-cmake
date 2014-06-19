@@ -36,8 +36,6 @@
 
 #define PLAYERCOREFACTORY_XML "playercorefactory.xml"
 
-using namespace AUTOPTR;
-
 CPlayerCoreFactory::CPlayerCoreFactory()
 { }
 
