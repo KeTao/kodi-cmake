@@ -32,6 +32,7 @@
 #include <errno.h>
 #include <iconv.h>
 #include <algorithm>
+#include <string.h>
 
 #if !defined(TARGET_WINDOWS) && defined(HAVE_CONFIG_H)
   #include "config.h"
