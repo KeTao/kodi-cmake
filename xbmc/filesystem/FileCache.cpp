@@ -34,6 +34,10 @@
 #include <algorithm>
 #include <memory>
 
+#ifdef TARGET_POSIX
+#include "linux/ConvUtils.h"
+#endif
+
 using namespace XFILE;
 
 #define READ_CACHE_CHUNK_SIZE (64*1024)
