@@ -43,6 +43,9 @@
 #include "addons/AddonManager.h"
 #include "interfaces/generic/ScriptInvocationManager.h"
 #include "addons/GUIDialogAddonSettings.h"
+#ifdef TARGET_POSIX
+#include "linux/XTimeUtils.h"
+#endif
 
 using namespace ADDON;
 using namespace XFILE;
