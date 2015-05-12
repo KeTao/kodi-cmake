@@ -135,6 +135,9 @@ bool CGUIWindowScreensaver::OnMessage(CGUIMessage& message)
 #ifdef HAS_SCREENSAVER
       assert(!m_addon);
       m_bInitialized = false;
+      std::string addonID = message.GetStringParam(0);
+      if (addonID.empty())
+        addonID = CSettings::Get().GetString("screensaver.mode");
 
       m_addon.reset();
       // Setup new screensaver instance
